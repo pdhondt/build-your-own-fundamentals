@@ -16,7 +16,7 @@ error_reporting(E_ALL);
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <?php // TODO: a dynamic title, changing per page would be better right? ?>
-    <title>Products</title>
+    <title>Articles</title>
 </head>
 <body>
 
@@ -27,12 +27,10 @@ error_reporting(E_ALL);
     </ul>
 </nav>
 
-<?php foreach ($products as $product) : ?>
-    <div>
-        <h2><?= $product->getName() ?></h2>
-        <p>Price (tax included): €<?= round($product->getPrice() * (1 + $product->getTax()), 2) ?></p>
-    </div>
-<?php endforeach; ?>
+<article>
+    <h2><?= $article->getTitle() ?></h2>
+    <p><?= $article->getContent() ?></p>
+</article>
 
 </body>
 </html>

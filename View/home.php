@@ -22,8 +22,8 @@ error_reporting(E_ALL);
 
 <nav>
     <ul>
-        <li><a href="index.php?page=articles">Articles</a></li>
-        <li><a href="index.php?page=products"> Products</a></li>
+        <li><a href="?page=articles">Articles</a></li>
+        <li><a href="?page=products">Products</a></li>
     </ul>
 </nav>
 
