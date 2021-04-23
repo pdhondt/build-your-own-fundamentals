@@ -13,7 +13,7 @@ class ArticleController
 
         $articles = [$article_1, $article_2, $article_3, $article_4];
 
-        if ($_GET['page'] === 'article-detail' && !empty($_GET['article_slug'])) {
+        if ($_GET['run'] === 'article-detail' && !empty($_GET['article_slug'])) {
             $article = null;
 
             foreach ($articles as $articleToCheck) {

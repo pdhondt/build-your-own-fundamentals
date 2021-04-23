@@ -30,7 +30,7 @@ error_reporting(E_ALL);
 <?php foreach ($articles as $article) : ?>
     <div>
         <h2><?= $article->getTitle() ?></h2>
-        <a href="?page=article-detail&article_slug=<?= $article->getSlug() ?>">Tell me more</a>
+        <a href="?page=articles&run=article-detail&article_slug=<?= $article->getSlug() ?>">Tell me more</a>
     </div>
 <?php endforeach; ?>
 
